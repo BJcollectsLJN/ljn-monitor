@@ -46,6 +46,29 @@
   }
  },
  "figures": {
+  "british-bulldog-with-intercontinental-title": {
+   "first_seen": 1794034238,
+   "keywords": [
+    "British Bulldog",
+    "Davey Boy Smith"
+   ],
+   "manual": true,
+   "name": "British Bulldog \u2013 with Intercontinental Title",
+   "release": null,
+   "retailers": {},
+   "sources": []
+  },
+  "cyndi-lauper": {
+   "first_seen": 1794034238,
+   "keywords": [
+    "Cyndi Lauper"
+   ],
+   "manual": true,
+   "name": "Cyndi Lauper",
+   "release": null,
+   "retailers": {},
+   "sources": []
+  },
   "hart-foundation-tag-team-2-pack": {
    "first_seen": 1794033170,
    "keywords": [
@@ -76,6 +99,29 @@
      "url": "https://www.target.com/p/wwe-ljn-superstars-hulk-hogan-action-figure-1980s-retro-8-34-collectible-toy/-/A-1012836865"
     }
    },
+   "sources": []
+  },
+  "junkyard-dog": {
+   "first_seen": 1794034238,
+   "keywords": [
+    "Junkyard Dog",
+    "JYD"
+   ],
+   "manual": true,
+   "name": "Junkyard Dog",
+   "release": null,
+   "retailers": {},
+   "sources": []
+  },
+  "roman-reigns-tribal-chief": {
+   "first_seen": 1794034238,
+   "keywords": [
+    "Roman Reigns"
+   ],
+   "manual": true,
+   "name": "Roman Reigns \u2013 Tribal Chief",
+   "release": null,
+   "retailers": {},
    "sources": []
   },
   "test-figure": {
