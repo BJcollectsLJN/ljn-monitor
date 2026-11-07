@@ -46,6 +46,22 @@
   }
  },
  "figures": {
+  "hart-foundation-tag-team-2-pack": {
+   "first_seen": 1794033170,
+   "keywords": [
+    "Hart Foundation"
+   ],
+   "manual": true,
+   "name": "Hart Foundation Tag Team 2-Pack",
+   "release": null,
+   "retailers": {
+    "target": {
+     "updated": 1794033170,
+     "url": "https://www.target.com/p/wwe-ljn-superstars-hart-foundation-tag-team-2-pack-1980s-retro-8-34-collectible-toy/-/A-95263314"
+    }
+   },
+   "sources": []
+  },
   "test-figure": {
    "first_seen": 1794032469,
    "name": "Test Figure",

@@ -29,13 +29,17 @@ def figure_for(st, name):
     if s in st["figures"]:
         return s, st["figures"][s]
     for fid, f in st["figures"].items():
-        if f.get("manual") and (fid in s or s in fid):
+        if not f.get("manual"):
+            continue
+        kws = [slug(k) for k in f.get("keywords", [])] or [fid]
+        if any(k in s or (s in k and len(s) > 6) for k in kws):
             return fid, f
     return upsert_figure(st, name)
 
 
 def alert_text(fig, listing, source, over_budget):
-    lines = [f"<b>{EMOJI.get(listing['event'], '📣')}</b>",
+    star = "⭐ ON YOUR WATCH LIST\n" if fig.get("manual") else ""
+    lines = [f"{star}<b>{EMOJI.get(listing['event'], '📣')}</b>",
              f"<b>{esc(fig['name'])}</b> (WWE LJN)"]
     price = f"${listing['price']:.2f}" if listing.get("price") else "price not listed"
     lines.append(f"💲 {price} · 🏬 {RETAILERS[listing['retailer']]}")

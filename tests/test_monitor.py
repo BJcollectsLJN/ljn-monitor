@@ -211,3 +211,14 @@ def test_dashboard_escapes_and_renders(tmp_path):
     assert "</script><b>" not in html
     assert html.count("<script>") == 1
     assert "safe(r.url)" in html  # non-http links neutralised in the browser
+
+
+def test_watch_list_keywords_match_news_wording():
+    from monitor.main import figure_for, alert_text
+    st = default_state(CFG)
+    fid, fig = upsert_figure(st, "Hart Foundation Tag Team 2-Pack")
+    fig.update(manual=True, keywords=["Hart Foundation"])
+    assert figure_for(st, "Hart Foundation 2-Pack")[0] == fid
+    assert figure_for(st, "Jey Uso")[0] != fid
+    L = {"event": "preorder", "retailer": "target", "url": "https://www.target.com/p/x", "price": 43.19}
+    assert "WATCH LIST" in alert_text(fig, L, {"name": "x"}, False)
