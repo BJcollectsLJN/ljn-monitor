@@ -1,0 +1,19 @@
+{
+  "feeds": [
+    {"name": "Wrestling Figure News", "url": "https://wrestlingfigurenews.com/feed/"},
+    {"name": "Toy Habits", "url": "https://toyhabits.com/feed/"},
+    {"name": "Google News", "url": "https://news.google.com/rss/search?q=%22LJN%22+WWE+figure&hl=en-US&gl=US&ceid=US:en"}
+  ],
+  "must_match_any": ["ljn"],
+  "user_agent": "LJN-Alert-Bot/1.0 (personal hobby RSS reader; polls feeds every 10 minutes)",
+  "min_minutes_between_feed_fetches": 9,
+  "request_timeout_seconds": 20,
+  "never_fetch_hosts": ["target.com", "wweshop.com", "fanatics.com"],
+  "default_monthly_budget": 150,
+  "mute_alerts_when_over_budget": false,
+  "duplicate_alert_window_hours": 24,
+  "auto_checkout": {
+    "enabled": false,
+    "note": "Neither Target nor WWEShop authorizes third-party automated checkout. Target's terms prohibit unapproved buying agents; Fanatics/WWEShop offers no purchase API. Leave disabled."
+  }
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LJN Monitor</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d1b18;--mute:#6b665d;--line:#e4dfd4;--accent:#c8102e;
+--ok:#1f7a3a;--warn:#a15c00;--info:#24569b;--chip:#efebe2}
+@media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1d1c19;--ink:#f1ede4;--mute:#a19b8f;
+--line:#302d28;--accent:#ff4d5e;--ok:#5fcf84;--warn:#f0a840;--info:#7fb0ff;--chip:#2a2824}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:20px 16px 60px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{margin:0;font:800 26px/1.1 ui-sans-serif,system-ui;letter-spacing:-.02em}
+h1 span{color:var(--accent)}h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;
+color:var(--mute);margin:28px 0 10px}
+.sub{color:var(--mute);font-size:13px}
+.banner{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;margin:14px 0;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stat b{display:block;font-size:22px}.stat small{color:var(--mute)}
+.bar{height:6px;background:var(--chip);border-radius:9px;margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok)}.bar i.over{background:var(--accent)}
+input{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);
+color:var(--ink);font:inherit}
+.list{display:grid;gap:8px}
+.fig{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.fig .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.fig .nm{font-weight:700}.fig .rel{color:var(--mute);font-size:13px;white-space:nowrap}
+.rets{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ret{display:inline-flex;gap:6px;align-items:center;background:var(--chip);border-radius:999px;
+padding:4px 10px;font-size:13px;color:var(--ink);text-decoration:none}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--mute)}
+.s-preorder .dot,.s-in_stock .dot,.s-restock .dot{background:var(--ok)}
+.s-sold_out .dot{background:var(--accent)}.s-announced .dot{background:var(--info)}
+.tag{font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;background:var(--ok);color:#fff;margin-left:6px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+td,th{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}
+th{color:var(--mute);font-weight:600;font-size:12px}
+.ev{font-size:14px;padding:7px 0;border-bottom:1px solid var(--line)}.ev time{color:var(--mute);font-size:12px;margin-right:8px}
+.empty{color:var(--mute);padding:14px;background:var(--card);border:1px dashed var(--line);border-radius:12px}
+a{color:var(--info)}
+</style></head><body><div class="wrap">
+<header><h1>WWE <span>LJN</span> Monitor</h1><div class="sub" id="gen"></div></header>
+<div id="banner"></div>
+<div class="stats" id="stats"></div>
+<h2>Figures</h2>
+<input id="q" placeholder="Search figures…" aria-label="Search figures">
+<div class="list" id="figs" style="margin-top:10px"></div>
+<h2>Purchases</h2><div id="buys"></div>
+<h2>Recent activity</h2><div id="events"></div>
+<h2>Sources</h2><div id="feeds"></div>
+<p class="sub" style="margin-top:30px">Checks public news feeds every ~10 minutes. Never visits or buys from
+Target/WWEShop directly. Manage via Telegram: /bought, /pause, /resume, /budget.</p>
+</div>
+<script>
+const D={"generated": 1794014805, "paused": false, "month": "2026-11", "spent": 0, "budget": 150, "figures": [], "purchases": [], "events": [], "feeds": [{"name": "Wrestling Figure News"}, {"name": "Toy Habits"}, {"name": "Google News"}]};
+const $=s=>document.querySelector(s);
+const e=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ago=t=>{if(!t)return"never";const m=Math.round((Date.now()/1e3-t)/60);
+ return m<1?"just now":m<60?m+" min ago":m<1440?Math.round(m/60)+" h ago":Math.round(m/1440)+" d ago"};
+const safe=u=>/^https?:\/\//i.test(u||"")?u:"#";
+$("#gen").textContent="Updated "+ago(D.generated);
+if(D.paused)$("#banner").innerHTML='<div class="banner">🛑 Alerts are paused (emergency stop). Send /resume in Telegram.</div>';
+const pct=Math.min(100,D.budget?D.spent/D.budget*100:0);
+const open=D.figures.filter(f=>Object.values(f.retailers).some(r=>["preorder","in_stock","restock"].includes(r.status))).length;
+$("#stats").innerHTML=`
+<div class="stat"><b>${D.figures.length}</b><small>figures tracked</small></div>
+<div class="stat"><b>${open}</b><small>preorder / in stock</small></div>
+<div class="stat"><b>${D.purchases.length}</b><small>purchases logged</small></div>
+<div class="stat"><b>$${D.spent.toFixed(2)}</b><small>of $${Number(D.budget).toFixed(2)} this month</small>
+<div class="bar"><i class="${D.spent>D.budget?"over":""}" style="width:${pct}%"></i></div></div>`;
+function figs(){const q=$("#q").value.toLowerCase();
+ const L=D.figures.filter(f=>f.name.toLowerCase().includes(q));
+ $("#figs").innerHTML=L.length?L.map(f=>`<div class="fig"><div class="top"><div class="nm">${e(f.name)}${f.bought?'<span class="tag">BOUGHT</span>':""}</div>
+ <div class="rel">${f.release?"Release: "+e(f.release):""}</div></div>
+ <div class="rets">${Object.values(f.retailers).map(r=>`<a class="ret s-${e(r.status)}" href="${e(safe(r.url))}" target="_blank" rel="noopener"><span class="dot"></span>${e(r.label)} · ${e(r.status_label)}${r.price?" · $"+Number(r.price).toFixed(2):""}</a>`).join("")||'<span class="sub">Watching – no retailer listing yet</span>'}</div></div>`).join("")
+ :'<div class="empty">No figures yet. They appear as news feeds report them.</div>'}
+$("#q").oninput=figs;figs();
+$("#buys").innerHTML=D.purchases.length?`<table><tr><th>Figure</th><th>Price</th><th>Store</th><th>Date</th></tr>${D.purchases.map(p=>`<tr><td>${e(p.name)}</td><td>$${Number(p.price).toFixed(2)}</td><td>${e(p.retailer||"–")}</td><td>${new Date(p.ts*1e3).toLocaleDateString()}</td></tr>`).join("")}</table>`
+ :'<div class="empty">No purchases logged. Text the bot: /bought Hulk Hogan 26.99 target</div>';
+$("#events").innerHTML=D.events.length?D.events.map(v=>`<div class="ev"><time>${ago(v.ts)}</time>${v.url?`<a href="${e(safe(v.url))}" target="_blank" rel="noopener">${e(v.text)}</a>`:e(v.text)}</div>`).join(""):'<div class="empty">Nothing yet.</div>';
+$("#feeds").innerHTML=`<table><tr><th>Feed</th><th>Status</th><th>Last fetched</th></tr>${D.feeds.map(f=>`<tr><td>${e(f.name)}</td><td>${e(f.status||"pending")}</td><td>${ago(f.last_fetch)}</td></tr>`).join("")}</table>`;
+</script></body></html>

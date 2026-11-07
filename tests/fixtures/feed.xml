@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Wrestling Figure News</title>
+<item>
+  <title>WWE LJN Pre-Orders Live at Target: Hart Foundation, Hulk Hogan &amp; More</title>
+  <link>https://example-news.test/ljn-target-preorders</link>
+  <guid>wfn-1001</guid>
+  <pubDate>Sat, 01 Aug 2026 12:00:00 +0000</pubDate>
+  <content:encoded><![CDATA[
+    <p>Pre-orders for the next wave of LJN WWE Superstars are live at Target, releasing May 1, 2027.</p>
+    <ul>
+      <li><a href="https://goto.target.com/MKWnjP">Hulk Hogan</a> – $26.99</li>
+      <li><a href="https://goto.target.com/m40RbD">Hart Foundation Tag Team 2-Pack</a> – $43.19</li>
+      <li>Jey Uso (Series 5) – $24.99 – <a href="https://goto.target.com/WO0d1e">Pre-order here</a></li>
+    </ul>
+  ]]></content:encoded>
+</item>
+<item>
+  <title>CM Punk LJN restock on WWE Shop</title>
+  <link>https://example-news.test/punk-restock</link>
+  <guid>wfn-1002</guid>
+  <content:encoded><![CDATA[<p>The sold out CM Punk LJN figure is back in stock: <a href="https://www.wweshop.com/en/wwe-ljn-cm-punk/p-123">CM Punk WWE LJN Figure</a> for $24.99.</p>]]></content:encoded>
+</item>
+<item>
+  <title>Mattel reveals new LJN WWE figures at SDCC</title>
+  <link>https://example-news.test/sdcc-ljn</link>
+  <guid>wfn-1003</guid>
+  <content:encoded><![CDATA[<p>Mattel showed off new LJN figures including Randy Savage. No preorder links yet.</p>]]></content:encoded>
+</item>
+<item>
+  <title>New WWE Elite Collection Series 140 revealed</title>
+  <link>https://example-news.test/elite-140</link>
+  <guid>wfn-1004</guid>
+  <content:encoded><![CDATA[<p>Elite figures at <a href="https://www.target.com/p/elite/-/A-1">Target</a>.</p>]]></content:encoded>
+</item>
+</channel></rss>
