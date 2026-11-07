@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "*/10 * * * *"   # every 10 minutes (GitHub may delay runs a few minutes)
   workflow_dispatch: {}       # "Run workflow" button for a manual check
+  push:
+    branches: [main]
+    paths: ["monitor/**", "config.json", ".github/workflows/monitor.yml"]
 
 concurrency:
   group: ljn-monitor
