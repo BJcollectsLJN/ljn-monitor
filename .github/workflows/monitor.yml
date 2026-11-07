@@ -6,7 +6,6 @@ on:
   workflow_dispatch: {}       # "Run workflow" button for a manual check
   push:
     branches: [main]
-    paths: ["monitor/**", "config.json", ".github/workflows/monitor.yml"]
 
 concurrency:
   group: ljn-monitor

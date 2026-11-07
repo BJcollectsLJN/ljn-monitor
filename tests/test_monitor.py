@@ -187,7 +187,7 @@ def test_rate_limit_backoff_and_min_gap():
 def test_commands_link_ignore_strangers_and_log_purchases():
     st = default_state(CFG)
     upsert_figure(st, "Hulk Hogan")
-    tg = FakeTG([msg(1, 99, "hello"), msg(2, 7, "/start"), msg(3, 99, "/pause"),
+    tg = FakeTG([msg(1, 7, "hi"), msg(2, 7, "/start"), msg(3, 99, "/pause"),
                  msg(4, 7, "/bought hogan 26.99 target"), msg(5, 7, "/budget 20")])
     replies = commands.handle_updates(st, tg)
     assert st["telegram"]["chat_id"] == 7 and st["telegram"]["offset"] == 6

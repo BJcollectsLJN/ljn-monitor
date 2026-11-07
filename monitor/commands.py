@@ -31,17 +31,20 @@ def handle_updates(st, tg, allowed_chat_env=None):
         msg = u.get("message") or {}
         chat = (msg.get("chat") or {}).get("id")
         text = (msg.get("text") or "").strip()
-        if not chat or not text.startswith("/"):
+        if not chat or not text:
             continue
         linked = allowed_chat_env or st["telegram"].get("chat_id")
         if linked and str(chat) != str(linked):
             continue  # ignore strangers
         if not linked:
-            if not text.lower().startswith("/start"):
+            if (msg.get("chat") or {}).get("type", "private") != "private":
                 continue
-            st["telegram"]["chat_id"] = chat
+            st["telegram"]["chat_id"] = chat  # first private chat to message the bot
             log_event(st, "system", "Telegram chat linked")
             replies.append((chat, "✅ Linked! This chat will get LJN alerts.\n\n" + HELP))
+            continue
+        if not text.startswith("/"):
+            replies.append((chat, "Hi! Send /help to see what I can do."))
             continue
         replies.append((chat, run_command(st, text)))
     return replies
