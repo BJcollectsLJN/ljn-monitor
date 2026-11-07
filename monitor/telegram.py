@@ -11,7 +11,9 @@ API = "https://api.telegram.org/bot{token}/{method}"
 
 class Telegram:
     def __init__(self, token=None, session=None):
-        self.token = token if token is not None else os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        raw = token if token is not None else os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        # tolerate copy/paste extras: spaces, line breaks, quotes, backticks
+        self.token = "".join(raw.split()).strip("`'\"")
         self.s = session or requests.Session()
 
     @property
@@ -35,7 +37,11 @@ class Telegram:
             if retry and attempt < 2:
                 time.sleep(min(int(retry), 30))
                 continue
-            print(f"[telegram] {method} error: {data.get('description')}")
+            if data.get("error_code") in (401, 404):
+                print("[telegram] Telegram rejected the bot token – re-copy it from BotFather "
+                      "into the TELEGRAM_BOT_TOKEN secret")
+            else:
+                print(f"[telegram] {method} error: {data.get('description')}")
             return None
         return None
 
