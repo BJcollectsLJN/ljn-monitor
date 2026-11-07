@@ -76,7 +76,8 @@ def test_parse_and_extract():
     assert (b["name"], b["retailer"], b["event"], b["price"]) == ("CM Punk", "wweshop", "restock", 24.99)
 
     assert extract(items[2])["listings"] == []
-    assert not is_ljn(items[3], ["ljn"])
+    assert not is_ljn(items[3], ["ljn", "wwe"])
+    assert not is_ljn({"title": "Thundercats LJN reissue preorder", "html": ""}, ["ljn", "wwe"])
 
 
 def test_fuzzy_names_do_not_confuse_wrestlers():

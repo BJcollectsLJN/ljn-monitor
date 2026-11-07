@@ -52,7 +52,7 @@ def process_item(st, cfg, item, feed, outbox, now):
     if item["guid"] in st["seen"]:
         return
     st["seen"].append(item["guid"])
-    if not is_ljn(item, cfg["must_match_any"]):
+    if not is_ljn(item, cfg["must_match_all"]):
         return
     info = extract(item)
     seeded = st["seeded"]

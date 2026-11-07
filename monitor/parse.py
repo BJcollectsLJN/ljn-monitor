@@ -104,7 +104,7 @@ def parse_feed(xml_text):
 
 def is_ljn(item, keywords):
     blob = (item["title"] + " " + BeautifulSoup(item["html"] or "", "html.parser").get_text(" ")).lower()
-    return any(k.lower() in blob for k in keywords)
+    return all(k.lower() in blob for k in keywords)
 
 
 def extract(item):

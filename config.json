@@ -9,9 +9,6 @@
       "url": "https://toyhabits.com/feed/"
     }
   ],
-  "must_match_any": [
-    "ljn"
-  ],
   "user_agent": "LJN-Alert-Bot/1.0 (personal hobby RSS reader; polls feeds every 10 minutes)",
   "min_minutes_between_feed_fetches": 9,
   "request_timeout_seconds": 20,
@@ -26,5 +23,9 @@
   "auto_checkout": {
     "enabled": false,
     "note": "Neither Target nor WWEShop authorizes third-party automated checkout. Target's terms prohibit unapproved buying agents; Fanatics/WWEShop offers no purchase API. Leave disabled."
-  }
+  },
+  "must_match_all": [
+    "ljn",
+    "wwe"
+  ]
 }
