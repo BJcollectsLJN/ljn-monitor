@@ -173,6 +173,10 @@ def main(argv=None):
     tg = Telegram()
     if not tg.enabled:
         print("[telegram] TELEGRAM_BOT_TOKEN not set – alerts will be printed only")
+    else:
+        me = tg._call("getMe")
+        if me:
+            print(f"[telegram] connected as @{me.get('username')}")
     changed, _ = run(cfg, st, Fetcher(cfg, st), tg, dry_run=args.dry_run, hard_stop=hard_stop)
     hourly = time.time() - st.get("last_commit", 0) > 3600
     if changed or hourly:
