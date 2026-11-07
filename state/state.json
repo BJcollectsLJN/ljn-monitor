@@ -15,6 +15,11 @@
    "kind": "system",
    "text": "Telegram chat linked",
    "ts": 1794021974
+  },
+  {
+   "kind": "purchase",
+   "text": "Bought Test Figure for $24.99",
+   "ts": 1794032469
   }
  ],
  "feeds": {
@@ -40,13 +45,30 @@
    "status": "ok (unchanged)"
   }
  },
- "figures": {},
+ "figures": {
+  "test-figure": {
+   "first_seen": 1794032469,
+   "name": "Test Figure",
+   "release": null,
+   "retailers": {},
+   "sources": []
+  }
+ },
  "last_alerts": {},
- "last_commit": 1794032333,
- "last_run": 1794032331,
- "monthly_budget": 150,
+ "last_commit": 1794032469,
+ "last_run": 1794032468,
+ "monthly_budget": 750.0,
  "paused": false,
- "purchases": [],
+ "purchases": [
+  {
+   "figure_id": "test-figure",
+   "name": "Test Figure",
+   "price": 24.99,
+   "qty": 1,
+   "retailer": "target",
+   "ts": 1794032469
+  }
+ ],
  "robots": {
   "news.google.com": {
    "mode": "rules",
@@ -119,7 +141,7 @@
  ],
  "telegram": {
   "chat_id": 9261698237,
-  "offset": 472020856
+  "offset": 472020858
  },
  "version": 1
 }
