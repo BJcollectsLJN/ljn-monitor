@@ -1,16 +1,117 @@
 {
- "events": [],
- "feeds": {},
+ "events": [
+  {
+   "kind": "news",
+   "text": "Thundercats Ultimates Hammerhand Cartoon First Appearance EE Preorder",
+   "ts": 1794019661,
+   "url": "https://toyhabits.com/thundercats-ultimates-hammerhand-cartoon-first-appearance-ee-preorder/"
+  },
+  {
+   "kind": "system",
+   "text": "First run: indexed 0 figures without alerting",
+   "ts": 1794019661
+  }
+ ],
+ "feeds": {
+  "https://news.google.com/rss/search?q=%22LJN%22+WWE+figure&hl=en-US&gl=US&ceid=US:en": {
+   "fails": 0,
+   "next_ok": 1794041261.664256,
+   "status": "disallowed by robots.txt"
+  },
+  "https://toyhabits.com/feed/": {
+   "etag": "\"74c99c6ff4ee4773e2d2046260b51d60\"",
+   "fails": 0,
+   "last_fetch": 1794019660,
+   "last_modified": "Fri, 06 Nov 2026 20:26:41 GMT",
+   "next_ok": 1794020200.6696105,
+   "status": "ok"
+  },
+  "https://wrestlingfigurenews.com/feed/": {
+   "etag": "W/\"abf58da48ac874eb20245f11d49e1460\"",
+   "fails": 0,
+   "last_fetch": 1794019660,
+   "last_modified": "Mon, 02 Nov 2026 23:39:21 GMT",
+   "next_ok": 1794020200.522978,
+   "status": "ok"
+  }
+ },
  "figures": {},
  "last_alerts": {},
- "last_commit": 0,
- "last_run": 0,
+ "last_commit": 1794019661,
+ "last_run": 1794019660,
  "monthly_budget": 150,
  "paused": false,
  "purchases": [],
- "robots": {},
- "seeded": false,
- "seen": [],
+ "robots": {
+  "news.google.com": {
+   "mode": "rules",
+   "text": "User-agent: *\nDisallow: /\nAllow: /$\nAllow: /?\nAllow: /home$\nAllow: /home?\nAllow: /home/\nAllow: /nwshp$\nAllow: /topics/\nAllow: /publications/\nAllow: /stories/\nAllow: /swg/\nAllow: /about$\nAllow: /about?\nAllow: /about/\n\nUser-agent: Googlebot\nDisallow: /\nAllow: /$\nAllow: /?\nAllow: /home$\nAllow: /home?\nAllow: /home/\nAllow: /swg/js/v1/swg-basic.js\n\nUser-agent: CCBot\nUser-agent: GPTBot\nUser-agent: ChatGPT-User\nUser-agent: PerplexityBot\nUser-agent: anthropic-ai\nUser-agent: ClaudeBot\nUser-agent: Claude-Web\nDisallow: /\n",
+   "ts": 1794019661.6994588
+  },
+  "toyhabits.com": {
+   "mode": "rules",
+   "text": "# ======Raptive Begin======\n\t\t\nUser-agent: ChatGPT-User\nDisallow: /\n\t\t\t\nUser-agent: GPTBot\nDisallow: /\n\t\t\t\nUser-agent: anthropic-ai\nDisallow: /\n\t\t\t\nUser-agent: Claude-Web\nDisallow: /\t\t\n\t\t\t\nUser-agent: PiplBot\nDisallow: /\t\t\n\t\t\t\nUser-agent: CCbot\nDisallow: /\t\t\n\t\t\t\nUser-agent: FacebookBot\nDisallow: /\t\t\n\t\t\t\n# ======Raptive End======\n\t\t\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://toyhabits.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
+   "ts": 1794019660.80246
+  },
+  "wrestlingfigurenews.com": {
+   "mode": "rules",
+   "text": "Sitemap: https://wrestlingfigurenews.com/sitemap.xml\nSitemap: https://wrestlingfigurenews.com/news-sitemap.xml\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php",
+   "ts": 1794019660.574495
+  }
+ },
+ "seeded": true,
+ "seen": [
+  "https://wrestlingfigurenews.com/?p=53947",
+  "https://wrestlingfigurenews.com/?p=53916",
+  "https://wrestlingfigurenews.com/?p=53879",
+  "https://wrestlingfigurenews.com/?p=53799",
+  "https://wrestlingfigurenews.com/?p=53714",
+  "https://wrestlingfigurenews.com/?p=53746",
+  "https://wrestlingfigurenews.com/?p=53685",
+  "https://wrestlingfigurenews.com/?p=53630",
+  "https://wrestlingfigurenews.com/?p=53607",
+  "https://wrestlingfigurenews.com/?p=53584",
+  "https://wrestlingfigurenews.com/?p=53567",
+  "https://wrestlingfigurenews.com/?p=53543",
+  "https://wrestlingfigurenews.com/?p=53472",
+  "https://wrestlingfigurenews.com/?p=53440",
+  "https://wrestlingfigurenews.com/?p=53409",
+  "https://wrestlingfigurenews.com/?p=53383",
+  "https://wrestlingfigurenews.com/?p=53373",
+  "https://wrestlingfigurenews.com/?p=53329",
+  "https://wrestlingfigurenews.com/?p=53322",
+  "https://wrestlingfigurenews.com/?p=53246",
+  "https://wrestlingfigurenews.com/?p=53273",
+  "https://wrestlingfigurenews.com/?p=53284",
+  "https://wrestlingfigurenews.com/?p=53235",
+  "https://wrestlingfigurenews.com/?p=53088",
+  "https://wrestlingfigurenews.com/?p=53184",
+  "https://wrestlingfigurenews.com/?p=53186",
+  "https://wrestlingfigurenews.com/?p=53166",
+  "https://wrestlingfigurenews.com/?p=53159",
+  "https://wrestlingfigurenews.com/?p=53131",
+  "https://wrestlingfigurenews.com/?p=53079",
+  "https://toyhabits.com/?p=157764",
+  "https://toyhabits.com/?p=157743",
+  "https://toyhabits.com/?p=157713",
+  "https://toyhabits.com/?p=157707",
+  "https://toyhabits.com/?p=157671",
+  "https://toyhabits.com/?p=157667",
+  "https://toyhabits.com/?p=157363",
+  "https://toyhabits.com/?p=157651",
+  "https://toyhabits.com/?p=157633",
+  "https://toyhabits.com/?p=157626",
+  "https://toyhabits.com/?p=157598",
+  "https://toyhabits.com/?p=157433",
+  "https://toyhabits.com/?p=157427",
+  "https://toyhabits.com/?p=157400",
+  "https://toyhabits.com/?p=157540",
+  "https://toyhabits.com/?p=157507",
+  "https://toyhabits.com/?p=157479",
+  "https://toyhabits.com/?p=153978",
+  "https://toyhabits.com/?p=157465",
+  "https://toyhabits.com/?p=157443"
+ ],
  "telegram": {
   "chat_id": null,
   "offset": 0
