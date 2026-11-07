@@ -31,17 +31,17 @@
   "https://toyhabits.com/feed/": {
    "etag": "\"74c99c6ff4ee4773e2d2046260b51d60\"",
    "fails": 0,
-   "last_fetch": 1794032332,
+   "last_fetch": 1794034250,
    "last_modified": "Fri, 06 Nov 2026 20:26:41 GMT",
-   "next_ok": 1794032872.127651,
+   "next_ok": 1794034790.098475,
    "status": "ok (unchanged)"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"abf58da48ac874eb20245f11d49e1460\"",
    "fails": 0,
-   "last_fetch": 1794032332,
+   "last_fetch": 1794034250,
    "last_modified": "Mon, 02 Nov 2026 23:39:21 GMT",
-   "next_ok": 1794032872.0610082,
+   "next_ok": 1794034790.0493968,
    "status": "ok (unchanged)"
   }
  },
@@ -133,20 +133,11 @@
   }
  },
  "last_alerts": {},
- "last_commit": 1794032469,
- "last_run": 1794032468,
+ "last_commit": 1794034250,
+ "last_run": 1794034249,
  "monthly_budget": 750.0,
  "paused": false,
- "purchases": [
-  {
-   "figure_id": "test-figure",
-   "name": "Test Figure",
-   "price": 24.99,
-   "qty": 1,
-   "retailer": "target",
-   "ts": 1794032469
-  }
- ],
+ "purchases": [],
  "robots": {
   "news.google.com": {
    "mode": "rules",
@@ -219,7 +210,7 @@
  ],
  "telegram": {
   "chat_id": 9261698237,
-  "offset": 472020858
+  "offset": 472020859
  },
  "version": 1
 }
