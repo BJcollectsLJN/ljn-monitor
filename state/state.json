@@ -31,17 +31,17 @@
   "https://toyhabits.com/feed/": {
    "etag": "\"dc8a0c69850db598f92101e2b876573c\"",
    "fails": 0,
-   "last_fetch": 1794190791,
+   "last_fetch": 1794198125,
    "last_modified": "Sun, 08 Nov 2026 17:04:28 GMT",
-   "next_ok": 1794191331.077937,
+   "next_ok": 1794198665.0088074,
    "status": "ok (unchanged)"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"2e5e4eb75623085fbaf0c692cb3325fe\"",
    "fails": 0,
-   "last_fetch": 1794190790,
+   "last_fetch": 1794198124,
    "last_modified": "Mon, 09 Nov 2026 00:19:14 GMT",
-   "next_ok": 1794191330.9151192,
+   "next_ok": 1794198664.9002676,
    "status": "ok (unchanged)"
   }
  },
@@ -133,8 +133,8 @@
   }
  },
  "last_alerts": {},
- "last_commit": 1794190791,
- "last_run": 1794190790,
+ "last_commit": 1794198125,
+ "last_run": 1794198124,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
@@ -147,12 +147,12 @@
   "toyhabits.com": {
    "mode": "rules",
    "text": "# ======Raptive Begin======\n\t\t\nUser-agent: ChatGPT-User\nDisallow: /\n\t\t\t\nUser-agent: GPTBot\nDisallow: /\n\t\t\t\nUser-agent: anthropic-ai\nDisallow: /\n\t\t\t\nUser-agent: Claude-Web\nDisallow: /\t\t\n\t\t\t\nUser-agent: PiplBot\nDisallow: /\t\t\n\t\t\t\nUser-agent: CCbot\nDisallow: /\t\t\n\t\t\t\nUser-agent: FacebookBot\nDisallow: /\t\t\n\t\t\t\n# ======Raptive End======\n\t\t\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://toyhabits.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
-   "ts": 1794108299.1437376
+   "ts": 1794198125.346176
   },
   "wrestlingfigurenews.com": {
    "mode": "rules",
-   "text": "Sitemap: https://wrestlingfigurenews.com/sitemap.xml\nSitemap: https://wrestlingfigurenews.com/news-sitemap.xml\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n",
-   "ts": 1794108297.4693503
+   "text": "Sitemap: https://wrestlingfigurenews.com/sitemap.xml\nSitemap: https://wrestlingfigurenews.com/news-sitemap.xml\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php",
+   "ts": 1794198124.9920766
   }
  },
  "seeded": true,
