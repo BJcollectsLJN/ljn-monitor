@@ -31,17 +31,17 @@
   "https://toyhabits.com/feed/": {
    "etag": "\"c7c42c420e960ba1ab5d19c17d35a2b4\"",
    "fails": 0,
-   "last_fetch": 1794281223,
+   "last_fetch": 1794284771,
    "last_modified": "Tue, 10 Nov 2026 02:32:32 GMT",
-   "next_ok": 1794281763.279502,
-   "status": "ok"
+   "next_ok": 1794285311.501666,
+   "status": "ok (unchanged)"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"2e5e4eb75623085fbaf0c692cb3325fe\"",
    "fails": 0,
-   "last_fetch": 1794281223,
+   "last_fetch": 1794284771,
    "last_modified": "Mon, 09 Nov 2026 00:19:14 GMT",
-   "next_ok": 1794281763.1104503,
+   "next_ok": 1794285311.3901477,
    "status": "ok (unchanged)"
   }
  },
@@ -133,8 +133,8 @@
   }
  },
  "last_alerts": {},
- "last_commit": 1794281224,
- "last_run": 1794281222,
+ "last_commit": 1794284771,
+ "last_run": 1794284771,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
@@ -147,12 +147,12 @@
   "toyhabits.com": {
    "mode": "rules",
    "text": "# ======Raptive Begin======\n\t\t\nUser-agent: ChatGPT-User\nDisallow: /\n\t\t\t\nUser-agent: GPTBot\nDisallow: /\n\t\t\t\nUser-agent: anthropic-ai\nDisallow: /\n\t\t\t\nUser-agent: Claude-Web\nDisallow: /\t\t\n\t\t\t\nUser-agent: PiplBot\nDisallow: /\t\t\n\t\t\t\nUser-agent: CCbot\nDisallow: /\t\t\n\t\t\t\nUser-agent: FacebookBot\nDisallow: /\t\t\n\t\t\t\n# ======Raptive End======\n\t\t\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://toyhabits.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
-   "ts": 1794198125.346176
+   "ts": 1794284771.6294944
   },
   "wrestlingfigurenews.com": {
    "mode": "rules",
    "text": "Sitemap: https://wrestlingfigurenews.com/sitemap.xml\nSitemap: https://wrestlingfigurenews.com/news-sitemap.xml\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php",
-   "ts": 1794198124.9920766
+   "ts": 1794284771.4904463
   }
  },
  "seeded": true,
