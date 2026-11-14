@@ -31,18 +31,18 @@
   "https://toyhabits.com/feed/": {
    "etag": "\"1c903d1652c378d5bc0c547b4c4e453f\"",
    "fails": 0,
-   "last_fetch": 1794620250,
+   "last_fetch": 1794626506,
    "last_modified": "Fri, 13 Nov 2026 19:50:45 GMT",
-   "next_ok": 1794620790.282821,
+   "next_ok": 1794627046.3787777,
    "status": "ok (unchanged)"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"18d7564966b8e6ce71373f1da2880854\"",
    "fails": 0,
-   "last_fetch": 1794620250,
+   "last_fetch": 1794626504,
    "last_modified": "Sat, 14 Nov 2026 00:54:55 GMT",
-   "next_ok": 1794620790.0193934,
-   "status": "ok"
+   "next_ok": 1794627044.5074947,
+   "status": "ok (unchanged)"
   }
  },
  "figures": {
@@ -133,8 +133,8 @@
   }
  },
  "last_alerts": {},
- "last_commit": 1794620250,
- "last_run": 1794620249,
+ "last_commit": 1794626506,
+ "last_run": 1794626504,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
