@@ -29,20 +29,20 @@
    "status": "disallowed by robots.txt"
   },
   "https://toyhabits.com/feed/": {
-   "etag": "\"1d287b9191a1bdb5636646e45c443cd6\"",
+   "etag": "\"d0eff5339a28bb5ec8a7961471935795\"",
    "fails": 0,
-   "last_fetch": 1795052564,
-   "last_modified": "Wed, 18 Nov 2026 21:36:43 GMT",
-   "next_ok": 1795053104.3666444,
-   "status": "ok (unchanged)"
+   "last_fetch": 1795059359,
+   "last_modified": "Thu, 19 Nov 2026 02:02:20 GMT",
+   "next_ok": 1795059899.8685365,
+   "status": "ok"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"6943ddca6d8e5702f249f6caa7cc2ffb\"",
    "fails": 0,
-   "last_fetch": 1795052562,
+   "last_fetch": 1795059359,
    "last_modified": "Thu, 19 Nov 2026 00:59:12 GMT",
-   "next_ok": 1795053102.9638565,
-   "status": "ok"
+   "next_ok": 1795059899.7846575,
+   "status": "ok (unchanged)"
   }
  },
  "figures": {
@@ -133,8 +133,8 @@
   }
  },
  "last_alerts": {},
- "last_commit": 1795052564,
- "last_run": 1795052562,
+ "last_commit": 1795059360,
+ "last_run": 1795059359,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
@@ -258,7 +258,8 @@
   "https://wrestlingfigurenews.com/?p=54209",
   "https://toyhabits.com/?p=158589",
   "https://wrestlingfigurenews.com/?p=54248",
-  "https://wrestlingfigurenews.com/?p=54239"
+  "https://wrestlingfigurenews.com/?p=54239",
+  "https://toyhabits.com/?p=158622"
  ],
  "telegram": {
   "chat_id": 9261698237,
