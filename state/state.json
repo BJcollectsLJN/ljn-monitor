@@ -20,6 +20,42 @@
    "kind": "purchase",
    "text": "Bought Test Figure for $24.99",
    "ts": 1794032469
+  },
+  {
+   "kind": "alert",
+   "text": "Ultimate Warrior & Wrestling Ring \u2013 Preorder open at Target",
+   "ts": 1795797459,
+   "url": "https://goto.target.com/xJM0xx"
+  },
+  {
+   "kind": "alert",
+   "text": "Steiner Brothers \u2013 Preorder open at Target",
+   "ts": 1795797459,
+   "url": "https://goto.target.com/L06zbV"
+  },
+  {
+   "kind": "alert",
+   "text": "British Bulldog \u2013 with Intercontinental Title \u2013 Preorder open at Target",
+   "ts": 1795797459,
+   "url": "https://goto.target.com/dyBbXW"
+  },
+  {
+   "kind": "alert",
+   "text": "Cyndi Lauper \u2013 Preorder open at Target",
+   "ts": 1795797459,
+   "url": "https://goto.target.com/6kjBaQ"
+  },
+  {
+   "kind": "alert",
+   "text": "Roman Reigns \u2013 Tribal Chief \u2013 Preorder open at Target",
+   "ts": 1795797459,
+   "url": "https://goto.target.com/oNMj2o"
+  },
+  {
+   "kind": "alert",
+   "text": "Junk Yard Dog \u2013 Preorder open at Target",
+   "ts": 1795797459,
+   "url": "https://goto.target.com/1GxajD"
   }
  ],
  "feeds": {
@@ -31,18 +67,18 @@
   "https://toyhabits.com/feed/": {
    "etag": "\"e37402a67381c2a53f337b63d7eeaee3\"",
    "fails": 0,
-   "last_fetch": 1795793272,
+   "last_fetch": 1795797459,
    "last_modified": "Thu, 26 Nov 2026 05:31:59 GMT",
-   "next_ok": 1795793812.273613,
+   "next_ok": 1795797999.9392087,
    "status": "ok (unchanged)"
   },
   "https://wrestlingfigurenews.com/feed/": {
-   "etag": "W/\"37de495baaf61a465ac3669b959b5067\"",
+   "etag": "W/\"86b1813443e0ef90b453b382d3bf080e\"",
    "fails": 0,
-   "last_fetch": 1795793272,
-   "last_modified": "Thu, 26 Nov 2026 17:31:58 GMT",
-   "next_ok": 1795793812.1942506,
-   "status": "ok (unchanged)"
+   "last_fetch": 1795797459,
+   "last_modified": "Fri, 27 Nov 2026 16:02:20 GMT",
+   "next_ok": 1795797999.8310585,
+   "status": "ok"
   }
  },
  "figures": {
@@ -55,8 +91,17 @@
    "manual": true,
    "name": "British Bulldog \u2013 with Intercontinental Title",
    "release": null,
-   "retailers": {},
-   "sources": []
+   "retailers": {
+    "target": {
+     "price": 26.99,
+     "status": "preorder",
+     "updated": 1795797459,
+     "url": "https://goto.target.com/dyBbXW"
+    }
+   },
+   "sources": [
+    "https://wrestlingfigurenews.com/2026/11/27/new-wwe-ljn-pre-orders-at-target-ultimate-warrior-steiner-bros-roman-reigns-more/"
+   ]
   },
   "cyndi-lauper": {
    "first_seen": 1794034238,
@@ -66,8 +111,17 @@
    "manual": true,
    "name": "Cyndi Lauper",
    "release": null,
-   "retailers": {},
-   "sources": []
+   "retailers": {
+    "target": {
+     "price": 26.99,
+     "status": "preorder",
+     "updated": 1795797459,
+     "url": "https://goto.target.com/6kjBaQ"
+    }
+   },
+   "sources": [
+    "https://wrestlingfigurenews.com/2026/11/27/new-wwe-ljn-pre-orders-at-target-ultimate-warrior-steiner-bros-roman-reigns-more/"
+   ]
   },
   "hart-foundation-tag-team-2-pack": {
    "first_seen": 1794033170,
@@ -101,6 +155,22 @@
    },
    "sources": []
   },
+  "junk-yard-dog": {
+   "first_seen": 1795797459,
+   "name": "Junk Yard Dog",
+   "release": null,
+   "retailers": {
+    "target": {
+     "price": 26.99,
+     "status": "preorder",
+     "updated": 1795797459,
+     "url": "https://goto.target.com/1GxajD"
+    }
+   },
+   "sources": [
+    "https://wrestlingfigurenews.com/2026/11/27/new-wwe-ljn-pre-orders-at-target-ultimate-warrior-steiner-bros-roman-reigns-more/"
+   ]
+  },
   "junkyard-dog": {
    "first_seen": 1794034238,
    "keywords": [
@@ -121,8 +191,33 @@
    "manual": true,
    "name": "Roman Reigns \u2013 Tribal Chief",
    "release": null,
-   "retailers": {},
-   "sources": []
+   "retailers": {
+    "target": {
+     "price": 26.99,
+     "status": "preorder",
+     "updated": 1795797459,
+     "url": "https://goto.target.com/oNMj2o"
+    }
+   },
+   "sources": [
+    "https://wrestlingfigurenews.com/2026/11/27/new-wwe-ljn-pre-orders-at-target-ultimate-warrior-steiner-bros-roman-reigns-more/"
+   ]
+  },
+  "steiner-brothers": {
+   "first_seen": 1795797459,
+   "name": "Steiner Brothers",
+   "release": null,
+   "retailers": {
+    "target": {
+     "price": 49.99,
+     "status": "preorder",
+     "updated": 1795797459,
+     "url": "https://goto.target.com/L06zbV"
+    }
+   },
+   "sources": [
+    "https://wrestlingfigurenews.com/2026/11/27/new-wwe-ljn-pre-orders-at-target-ultimate-warrior-steiner-bros-roman-reigns-more/"
+   ]
   },
   "test-figure": {
    "first_seen": 1794032469,
@@ -130,11 +225,34 @@
    "release": null,
    "retailers": {},
    "sources": []
+  },
+  "ultimate-warrior-and-wrestling-ring": {
+   "first_seen": 1795797459,
+   "name": "Ultimate Warrior & Wrestling Ring",
+   "release": null,
+   "retailers": {
+    "target": {
+     "price": 74.99,
+     "status": "preorder",
+     "updated": 1795797459,
+     "url": "https://goto.target.com/xJM0xx"
+    }
+   },
+   "sources": [
+    "https://wrestlingfigurenews.com/2026/11/27/new-wwe-ljn-pre-orders-at-target-ultimate-warrior-steiner-bros-roman-reigns-more/"
+   ]
   }
  },
- "last_alerts": {},
- "last_commit": 1795793272,
- "last_run": 1795793272,
+ "last_alerts": {
+  "british-bulldog-with-intercontinental-title|target|preorder": 1795797459.7211127,
+  "cyndi-lauper|target|preorder": 1795797459.7211127,
+  "junk-yard-dog|target|preorder": 1795797459.7211127,
+  "roman-reigns-tribal-chief|target|preorder": 1795797459.7211127,
+  "steiner-brothers|target|preorder": 1795797459.7211127,
+  "ultimate-warrior-and-wrestling-ring|target|preorder": 1795797459.7211127
+ },
+ "last_commit": 1795797461,
+ "last_run": 1795797459,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
@@ -288,7 +406,8 @@
   "https://toyhabits.com/?p=158939",
   "https://wrestlingfigurenews.com/?p=54653",
   "https://toyhabits.com/?p=158958",
-  "https://wrestlingfigurenews.com/?p=54660"
+  "https://wrestlingfigurenews.com/?p=54660",
+  "https://wrestlingfigurenews.com/?p=54702"
  ],
  "telegram": {
   "chat_id": 9261698237,
