@@ -56,6 +56,12 @@
    "text": "Junk Yard Dog \u2013 Preorder open at Target",
    "ts": 1795797459,
    "url": "https://goto.target.com/1GxajD"
+  },
+  {
+   "kind": "news",
+   "text": "WWE LJN Superstars Wave 7 Cage Match Ring and Steiner Brothers Target Exclusive Preorders",
+   "ts": 1795807953,
+   "url": "https://toyhabits.com/wwe-ljn-superstars-wave-7-cage-match-ring-and-steiner-brothers-target-exclusive-preorders/"
   }
  ],
  "feeds": {
@@ -65,20 +71,20 @@
    "status": "disallowed by robots.txt"
   },
   "https://toyhabits.com/feed/": {
-   "etag": "\"e37402a67381c2a53f337b63d7eeaee3\"",
+   "etag": "\"1742610bd9875204b35b18c9aada6f9c\"",
    "fails": 0,
-   "last_fetch": 1795800932,
-   "last_modified": "Thu, 26 Nov 2026 05:31:59 GMT",
-   "next_ok": 1795801472.9311755,
-   "status": "ok (unchanged)"
+   "last_fetch": 1795807952,
+   "last_modified": "Fri, 27 Nov 2026 19:20:35 GMT",
+   "next_ok": 1795808492.4514842,
+   "status": "ok"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"e61bd9fc728e202f16049a32f12bedd0\"",
    "fails": 0,
-   "last_fetch": 1795800930,
+   "last_fetch": 1795807952,
    "last_modified": "Fri, 27 Nov 2026 17:19:22 GMT",
-   "next_ok": 1795801470.9869013,
-   "status": "ok"
+   "next_ok": 1795808492.3969882,
+   "status": "ok (unchanged)"
   }
  },
  "figures": {
@@ -251,8 +257,8 @@
   "steiner-brothers|target|preorder": 1795797459.7211127,
   "ultimate-warrior-and-wrestling-ring|target|preorder": 1795797459.7211127
  },
- "last_commit": 1795800933,
- "last_run": 1795800930,
+ "last_commit": 1795807953,
+ "last_run": 1795807952,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
@@ -409,7 +415,8 @@
   "https://wrestlingfigurenews.com/?p=54660",
   "https://wrestlingfigurenews.com/?p=54702",
   "https://wrestlingfigurenews.com/?p=54683",
-  "https://wrestlingfigurenews.com/?p=54728"
+  "https://wrestlingfigurenews.com/?p=54728",
+  "https://toyhabits.com/?p=159015"
  ],
  "telegram": {
   "chat_id": 9261698237,
