@@ -71,19 +71,19 @@
    "status": "disallowed by robots.txt"
   },
   "https://toyhabits.com/feed/": {
-   "etag": "\"1742610bd9875204b35b18c9aada6f9c\"",
+   "etag": "\"ed057657e93f6152ebebf40b54672435\"",
    "fails": 0,
-   "last_fetch": 1795807952,
-   "last_modified": "Fri, 27 Nov 2026 19:20:35 GMT",
-   "next_ok": 1795808492.4514842,
+   "last_fetch": 1795815221,
+   "last_modified": "Fri, 27 Nov 2026 21:02:51 GMT",
+   "next_ok": 1795815761.1822305,
    "status": "ok"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"e61bd9fc728e202f16049a32f12bedd0\"",
    "fails": 0,
-   "last_fetch": 1795807952,
+   "last_fetch": 1795815221,
    "last_modified": "Fri, 27 Nov 2026 17:19:22 GMT",
-   "next_ok": 1795808492.3969882,
+   "next_ok": 1795815761.0550344,
    "status": "ok (unchanged)"
   }
  },
@@ -257,8 +257,8 @@
   "steiner-brothers|target|preorder": 1795797459.7211127,
   "ultimate-warrior-and-wrestling-ring|target|preorder": 1795797459.7211127
  },
- "last_commit": 1795807953,
- "last_run": 1795807952,
+ "last_commit": 1795815221,
+ "last_run": 1795815220,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
