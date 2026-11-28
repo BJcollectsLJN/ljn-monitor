@@ -71,19 +71,19 @@
    "status": "disallowed by robots.txt"
   },
   "https://toyhabits.com/feed/": {
-   "etag": "\"4b7596e991ec210c1cb4c00705c084a7\"",
+   "etag": "\"353d4a70ca4f231c3a1e24772a9d2810\"",
    "fails": 0,
-   "last_fetch": 1795873492,
-   "last_modified": "Sat, 28 Nov 2026 04:12:49 GMT",
-   "next_ok": 1795874032.9782903,
-   "status": "ok (unchanged)"
+   "last_fetch": 1795876275,
+   "last_modified": "Sat, 28 Nov 2026 14:04:57 GMT",
+   "next_ok": 1795876815.832508,
+   "status": "ok"
   },
   "https://wrestlingfigurenews.com/feed/": {
    "etag": "W/\"8de9bcbc2ed59a6fac5675662794ffb2\"",
    "fails": 0,
-   "last_fetch": 1795873492,
+   "last_fetch": 1795876275,
    "last_modified": "Sat, 28 Nov 2026 02:37:57 GMT",
-   "next_ok": 1795874032.9253242,
+   "next_ok": 1795876815.7512069,
    "status": "ok (unchanged)"
   }
  },
@@ -263,8 +263,8 @@
   "steiner-brothers|target|preorder": 1795797459.7211127,
   "ultimate-warrior-and-wrestling-ring|target|preorder": 1795797459.7211127
  },
- "last_commit": 1795873493,
- "last_run": 1795873492,
+ "last_commit": 1795876276,
+ "last_run": 1795876275,
  "monthly_budget": 750.0,
  "paused": false,
  "purchases": [],
@@ -277,12 +277,12 @@
   "toyhabits.com": {
    "mode": "rules",
    "text": "# ======Raptive Begin======\n\t\t\nUser-agent: ChatGPT-User\nDisallow: /\n\t\t\t\nUser-agent: GPTBot\nDisallow: /\n\t\t\t\nUser-agent: anthropic-ai\nDisallow: /\n\t\t\t\nUser-agent: Claude-Web\nDisallow: /\t\t\n\t\t\t\nUser-agent: PiplBot\nDisallow: /\t\t\n\t\t\t\nUser-agent: CCbot\nDisallow: /\t\t\n\t\t\t\nUser-agent: FacebookBot\nDisallow: /\t\t\n\t\t\t\n# ======Raptive End======\n\t\t\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://toyhabits.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
-   "ts": 1795789480.2778597
+   "ts": 1795876276.0177593
   },
   "wrestlingfigurenews.com": {
    "mode": "rules",
    "text": "Sitemap: https://wrestlingfigurenews.com/sitemap.xml\nSitemap: https://wrestlingfigurenews.com/news-sitemap.xml\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php",
-   "ts": 1795789480.0443387
+   "ts": 1795876275.821607
   }
  },
  "seeded": true,
@@ -423,7 +423,8 @@
   "https://wrestlingfigurenews.com/?p=54683",
   "https://wrestlingfigurenews.com/?p=54728",
   "https://toyhabits.com/?p=159015",
-  "https://wrestlingfigurenews.com/?p=54749"
+  "https://wrestlingfigurenews.com/?p=54749",
+  "https://toyhabits.com/?p=159040"
  ],
  "telegram": {
   "chat_id": 9261698237,
